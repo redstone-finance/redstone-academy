@@ -111,7 +111,7 @@ Writes a new "interaction" transaction - i.e. such transaction that stores input
 The interaction transactions are loaded during the contract state evaluation.
 
 - `input` the interaction input
-- `options` - an object with some custom options (see [WriteInteractionOptions](https://github.com/warp-contracts/warp/blob/main/src/contract/Contract.ts#L49))
+- `options` - an object with some custom options (see [WriteInteractionOptions](https://github.com/warp-contracts/warp/blob/main/src/contract/Contract.ts#L57))
 
 In case of the `forMainnet` and `forTestnet` obtained `Warp` instances, interaction transactions are bundled and posted on Arweave using Warp Sequencer.  
 If you want to post transactions directly to Arweave - disable bundling by setting `options.disableBundling` to `true`.
